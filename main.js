@@ -29,9 +29,14 @@ document.querySelector('body').addEventListener('keydown' ,(e)=>{
         }
 })
 function notification(message="متنی وارد نشده است"){
+   let w_item = 100;
   let container = document.querySelector('.notification');
   document.querySelector('.message').innerHTML=message;
   container.style.display = 'block';
+  let timer2 = setInterval(()=>{
+    w_item--;
+    document.querySelector('.timer').style.width = `${w_item}%`;
+  },28);
   setTimeout(()=>{
     container.style.display = "none";
   },3000)
