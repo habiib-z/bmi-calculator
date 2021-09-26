@@ -56,3 +56,9 @@ input:focus{
     border-radius: 5px;
     display: none;
 }
+.timer{
+    width: 100%;
+    background-color: #fff; 
+    height: 10px;
+    margin-top: 10px;
+}
